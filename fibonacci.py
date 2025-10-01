@@ -6,8 +6,14 @@
 # Validate that the input is a positive integer.
 # Use a for loop to print the Fibonacci sequence up to that many terms.
 
-  input ("how many terms of fibonacci sequence do you want?"
-         if input < 0 
-         print "invalid number select a number greater then 0"
-print return
-}
+ n = int(input("How many terms of Fibonacci sequence do you want? "))
+
+# Check for invalid number
+if n <= 0:
+    print("0 is an invalid number plaese select a number greater then 0.")
+else:
+    a, b = 0, 1
+    print("Fibonacci sequence:")
+    for i in range(n):
+        print(a, end=" ")
+        a, b = b, a + b
