@@ -22,3 +22,5 @@ for i in range(terms):
     a, b = b, a + b
 
 print()
+
+
